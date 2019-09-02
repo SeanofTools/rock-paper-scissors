@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Simple Rock Paper Scissors</title>
+        <link rel="stylesheet" href="styles/style.css">
+    </head>
+<body>
+       <!--<script src="scripts/main.js">-->
+    <!--Here is the JS area-->
+    <script src="scripts/main.js"></script>
+    <header>
+        <h1><span>Rock Paper Scissors</span></h1>
+    </header>
+    <div class="select">
+            <span class="description" onclick="userCheat()">Click on 1!</span>
+    </div> <!--The images of 3 choices-->
+    <section class="choices">
+        <div id="rock"><img src="images/rock.png" alt="rock" class="image" onclick="userRock()"></div>
+        <div id="paper"><img src="images/paper.png" alt="paper" class="image" onclick="userPaper()"></div>
+        <div id="scissors"><img src="images/scissors.png" alt="scissors" class="image" onclick="userScissors()"></div>
+    </section>
+
+    <!--This is the label for the pictures-->
+    <section class="descriptor"><span id="rock-text">Rock</span><span id="paper-text">Paper</span><span id="scissors-text">Scissors</span></section>
+    <hr style="width: 500px">
+    <!--<div class="select cpu">
+        <span class="description">The CPU will also pick!</span>
+    </div> The images of 3 choices
+    <section class="choices">
+            <div id="cpu-rock"><img src="images/rock.png" alt="rock" class="image"></div>
+            <div id="cpu-paper"><img src="images/paper.png" alt="paper" class="image"></div>
+            <div id="cpu-scissors"><img src="images/scissors.png" alt="scissors" class="image"></div>
+    </section>-->
+
+    <div class="submit">
+        <input type="button" class="start" value="Rock, Paper, Scissors, 1-2-3!" onclick="checkResult(userInput)">
+        <input type="button" class="restart" value="Play again?" onclick="location.reload()">
+    </div>
+
+    <footer>
+<h4>This small project was completed on 9/2/2019 after 3 weeks of learning the basics of web development.</h4>
+    </footer>
+</body>
+</html>
