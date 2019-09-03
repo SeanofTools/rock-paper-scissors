@@ -150,11 +150,13 @@ h1 span {
   grid-template-columns: 200px auto;
   font-size: 30px;
   border: 2px solid black;
+  background-color: skyblue;
 }
 
 .scoreCount span {
   border-right: 2px solid black;
   margin-right: 20px;
+  background-color: floralwhite;
 }
 
 /*.cpuCount {
