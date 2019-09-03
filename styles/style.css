@@ -138,6 +138,36 @@ h1 span {
   border-radius: 5px;
 }
 
+.scores {
+  padding-top: 25px;
+  display: flex;
+  justify-content: center;
+}
+
+.scoreCount {
+  padding: 10px 25px;
+  display: grid;
+  grid-template-columns: 200px auto;
+  font-size: 30px;
+  border: 2px solid black;
+}
+
+.scoreCount span {
+  border-right: 2px solid black;
+  margin-right: 20px;
+}
+
+/*.cpuCount {
+  margin-left: 100px;
+}*/
+
+.scoreSize {
+  font-size: 30px;
+  /*border: 2px solid black;
+  border-radius: 5px;*/
+  padding: 10px 20px;
+}
+
 footer {
   padding:30px 0;
   text-align: center;
