@@ -26,21 +26,21 @@
 	  let cpMove = getCpuMove(cpuMove);
 
             if (user === cpMove) {
-                alert('You used '+ user +' and the CPU used '+ cpMove +'. It\s a draw!') 
+                document.getElementById("compResult").innerHTML = 'You used '+ user.toUpperCase() +' and the CPU used '+ cpMove.toUpperCase() +'. It\s a draw!';
 			} else if (user === 'rock' && cpMove === 'paper') {
-                alert('You used ROCK and the CPU used PAPER. The CPU wins!') 
+                document.getElementById("compResult").innerHTML = 'You used ROCK and the CPU used PAPER. The CPU wins!';
 			cpuScore++;
 			} else if (user === 'paper' && cpMove === 'scissors') {
-                alert('You used PAPER and the CPU used SCISSORS. The CPU wins!') 
+                document.getElementById("compResult").innerHTML = 'You used PAPER and the CPU used SCISSORS. The CPU wins!';
 			cpuScore++;
 			} else if (user === 'scissors' && cpMove === 'rock') {
-                alert('You used SCISSORS and the CPU used ROCK. The CPU wins!') 
+                document.getElementById("compResult").innerHTML = 'You used SCISSORS and the CPU used ROCK. The CPU wins!';
 			cpuScore++;
 			} else if (user === 'gun') { 
-                alert('You brought a gun to a game of Rock, Paper, Scissors?! Take your win and go away!') 
+                document.getElementById("compResult").innerHTML = 'You brought a gun to a game of Rock, Paper, Scissors?! Take your win and go away!';
 			userScore++;
             } else {
-                alert('You used '+ user.toUpperCase() +' and the CPU used '+ cpMove.toUpperCase() +'. You win!') 
+                document.getElementById("compResult").innerHTML = 'You used '+ user.toUpperCase() +' and the CPU used '+ cpMove.toUpperCase() +'. You win!'; 
 			userScore++;
             }
 		document.getElementById("userScoreCount").innerHTML = ' '+userScore;

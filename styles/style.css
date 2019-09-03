@@ -138,6 +138,20 @@ h1 span {
   border-radius: 5px;
 }
 
+.print {
+  display: flex;
+  justify-content: center;
+}
+
+#compResult {
+  max-width: 800px;
+  font-size: 27px;
+  font-family: "Times New Roman", serif;
+  border-top: 3px dashed black;
+  border-bottom: 3px dashed black;
+  padding: 10px 0;
+}
+
 .scores {
   padding-top: 25px;
   display: flex;
